@@ -21,9 +21,7 @@ readme = "README.md"
 arrayvec = { workspace = true }
 cv-core = { version = "0.15.0", path = "../cv-core" }
 cv-pinhole = { version = "0.6.0", path = "../cv-pinhole" }
-derive_more = { workspace = true }
 float-ord = { workspace = true }
-num-traits = { workspace = true }
 
 [dev-dependencies]
 nalgebra = { workspace = true, features = ["rand"] }
