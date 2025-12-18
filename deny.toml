@@ -27,6 +27,8 @@ allow = [
     "Ubuntu-font-1.0",
     "0BSD",
     "NCSA",
+    # needed for lambda-twist crate
+    "MPL-2.0",
 ]
 
 
