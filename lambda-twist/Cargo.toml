@@ -1,7 +1,10 @@
 [package]
 name = "lambda-twist"
 version = "0.7.0"
-authors = ["Matthieu Pizenberg <matthieu.pizenberg@gmail.com>", "Geordon Worley <vadixidav@gmail.com>"]
+authors = [
+    "Matthieu Pizenberg <matthieu.pizenberg@gmail.com>",
+    "Geordon Worley <vadixidav@gmail.com>",
+]
 edition = "2021"
 description = "p3p pose estimation given world points and feature bearings"
 documentation = "https://docs.rs/lambda-twist/"
@@ -12,18 +15,18 @@ categories = ["computer-vision", "algorithms", "science::robotics", "no-std"]
 license = "MPL-2.0"
 
 [package.metadata.docs.rs]
-rustdoc-args = [ "--html-in-header", "katex-header.html" ]
+rustdoc-args = ["--html-in-header", "katex-header.html"]
 
 [dependencies]
 cv-core = { version = "0.15.0", path = "../cv-core" }
-num-traits = { version = "0.2.14", default-features = false }
-arrayvec = { version = "0.7.2", default-features = false }
+num-traits = { workspace = true }
+arrayvec = { workspace = true }
 
 [dev-dependencies]
 approx = "0.5.1"
-arrsac = "0.10.0"
-rand = { version = "0.8.4", features = ["small_rng"] }
+arrsac = { workspace = true }
+cv-pinhole = { version = "0.6.0", path = "../cv-pinhole" }
+itertools = { workspace = true }
 quickcheck = "1.0.3"
 quickcheck_macros = "1.0.0"
-itertools = "0.10.3"
-cv-pinhole = { version = "0.6.0", path = "../cv-pinhole" }
+rand = { workspace = true, features = ["small_rng"] }

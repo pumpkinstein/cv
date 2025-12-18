@@ -7,7 +7,13 @@ description = "Contains core primitives used in computer vision applications"
 documentation = "https://docs.rs/cv-core/"
 repository = "https://github.com/rust-cv/cv"
 keywords = ["computer", "vision", "core", "cv", "photogrammetry"]
-categories = ["algorithms", "computer-vision", "no-std", "science", "science::robotics"]
+categories = [
+    "algorithms",
+    "computer-vision",
+    "no-std",
+    "science",
+    "science::robotics",
+]
 license = "MIT"
 readme = "README.md"
 
@@ -16,11 +22,11 @@ serde-serialize = ["serde", "nalgebra/serde-serialize"]
 
 [dependencies]
 # TODO: Fix this once alloc feature is working again.
-nalgebra = { version = "0.30.1", default-features = false, features = ["std"] }
-derive_more = "0.99.17"
-sample-consensus = "1.0.2"
-num-traits = { version = "0.2.14", default-features = false }
-serde = { version = "1.0.136", default-features = false, features = ["derive"], optional = true }
+derive_more = { workspace = true }
+nalgebra = { workspace = true, features = ["std"] }
+num-traits = { workspace = true }
+sample-consensus = { workspace = true }
+serde = { workspace = true, features = ["derive"], optional = true }
 
 [package.metadata.docs.rs]
 all-features = true
