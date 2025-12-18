@@ -6,12 +6,12 @@ edition = "2021"
 license = "MIT"
 
 [dependencies]
-arrayvec = { version = "0.7.2", default-features = false }
+arrayvec = { workspace = true }
 cv-core = { version = "0.15.0", path = "../cv-core" }
 cv-pinhole = { version = "0.6.0", path = "../cv-pinhole" }
-float-ord = "0.3.2"
-sample-consensus = "1.0.2"
+float-ord = { workspace = true }
+sample-consensus = { workspace = true }
 
 [dev-dependencies]
-itertools = "0.10.3"
-nalgebra = "0.30.1"
+itertools = { workspace = true }
+nalgebra = { workspace = true }

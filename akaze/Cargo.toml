@@ -13,37 +13,42 @@ readme = "README.md"
 
 [dependencies]
 cv-core = { version = "0.15.0", path = "../cv-core" }
-image = { version = "0.25", default-features = false }
-log = { version = "0.4.14", default-features = false }
-primal = { version = "0.3.0", default-features = false }
-derive_more = { version = "0.99.17", default-features = false }
+# external dependencies
+bitarray = { workspace = true }
+derive_more = { workspace = true }
+float-ord = { workspace = true }
+image = { workspace = true }
+log = { workspace = true }
+ndarray = { version = "0.16", default-features = false }
 nshare = { version = "0.10", default-features = false, features = [
     "ndarray",
     "image",
 ] }
-ndarray = { version = "0.16", default-features = false }
-float-ord = { version = "0.3.2", default-features = false }
-space = "0.17.0"
-bitarray = "0.9.0"
+primal = { version = "0.3.0", default-features = false }
+rayon = { version = "1.7.0", optional = true }
+serde = { workspace = true, features = ["derive"], optional = true }
+space = { workspace = true }
 thiserror = { version = "1.0.40", default-features = false }
 wide = "0.7"
-serde = { version = "1.0", default-features = false, features = ["derive"], optional = true }
-rayon = { version = "1.7.0", optional = true }
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
-web-sys = { version = "0.3.64", features = ["Window", "Performance"], optional = true }
+web-sys = { version = "0.3.64", features = [
+    "Window",
+    "Performance",
+], optional = true }
 
 [dev-dependencies]
-eight-point = { version = "0.8.0", path = "../eight-point" }
 cv-pinhole = { version = "0.6.0", path = "../cv-pinhole" }
-arrsac = "0.10.0"
-rand = "0.8.4"
-rand_pcg = "0.3.1"
+eight-point = { version = "0.8.0", path = "../eight-point" }
+# external dev-dependencies
+arrsac = { workspace = true }
+bitarray = { workspace = true, features = ["space"] }
 criterion = "0.3.5"
-pretty_env_logger = "0.4.0"
-image = "0.25"
-bitarray = { version = "0.9.0", features = ["space"] }
-imageproc = "0.25.0"
+image = { workspace = true }
+imageproc = { workspace = true }
+pretty_env_logger = { workspace = true }
+rand = { workspace = true }
+rand_pcg = "0.3.1"
 
 [[bench]]
 name = "criterion"
