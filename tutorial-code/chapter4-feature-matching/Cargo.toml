@@ -2,6 +2,7 @@
 name = "chapter4-feature-matching"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
 
 [dependencies]
 cv = { version = "0.6.0", path = "../../cv" }
