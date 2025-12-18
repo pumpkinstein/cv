@@ -29,7 +29,7 @@ float-ord = { version = "0.3.2", default-features = false }
 hgg = "0.4.1"
 image = { version = "0.25", default-features = false }
 imageproc = { version = "0.25", default-features = false }
-itertools = "0.10.3"
+itertools = "0.14.0"
 log = { version = "0.4.14", default-features = false }
 nalgebra = { version = "0.30.1", default-features = false }
 num-traits = { version = "0.2.14", default-features = false }
