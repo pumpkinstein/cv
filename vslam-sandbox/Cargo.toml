@@ -25,7 +25,6 @@ log = { workspace = true }
 pretty_env_logger = { workspace = true }
 rand = { workspace = true }
 rand_xoshiro = { workspace = true }
-serde = { workspace = true, features = ["derive"] }
 serde_json = { workspace = true }
 slotmap = { workspace = true, default-features = false }
 structopt = { workspace = true }

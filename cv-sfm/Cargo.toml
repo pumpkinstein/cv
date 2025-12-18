@@ -22,8 +22,6 @@ cv-core = { version = "0.15.0", path = "../cv-core" }
 cv-geom = { version = "0.7.0", path = "../cv-geom" }
 cv-optimize = { version = "0.1.0", path = "../cv-optimize" }
 cv-pinhole = { version = "0.6.0", path = "../cv-pinhole" }
-eight-point = { version = "0.8.0", path = "../eight-point" }
-lambda-twist = { version = "0.7.0", path = "../lambda-twist" }
 # external dependencies
 arrayvec = { workspace = true }
 average = "0.13.1"
