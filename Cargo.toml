@@ -18,8 +18,9 @@ members = [
     "tutorial-code/chapter5-geometric-verification",
 ]
 
-[workspace.dependencies]
+resolver = "2"
 
+[workspace.dependencies]
 arrayvec = { version = "0.7.2", default-features = false }
 arrsac = "0.10.0"
 bincode = "1.3.3"
